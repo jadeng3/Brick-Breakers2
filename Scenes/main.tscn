@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://mxmlik43w1cg" path="res://Scenes/paddle.tscn" id="1_bwjvb"]
 [ext_resource type="PackedScene" uid="uid://em5x60pt1ul7" path="res://ball.tscn" id="2_7166u"]
 
-[node name="main" type="Node"]
+[node name="Main" type="Node"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
