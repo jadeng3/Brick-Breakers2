@@ -15,9 +15,13 @@ var start_position: Vector2
 
 func _ready():
 	start_position = position
-
-func _physics_proccess(delta):
+	
+func _physics_process(delta):
 	var collision = move_and_collide(velocity * ball_speed * delta)
+	if (!collision):
+		return
+		
+	velocity = velocity.bounce(collision.get_normal())
 	
 func start_ball():
 	position = start_position
