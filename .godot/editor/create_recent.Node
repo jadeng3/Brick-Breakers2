@@ -1,10 +1,13 @@
+AudioStreamPlayer2D
+AudioStreamPlayer
+Node
+Node2D
 Button
 Label
 VBoxContainer
 Panel
 CenterContainer
 Marker2D
-Node
 CollisionShape2D
 Sprite2D
 RigidBody2D
