@@ -16,8 +16,8 @@ var start_position: Vector2
 var last_collider_id
 
 @onready var collision_shape_2d = $CollisionShape2D
-@onready var wall_audio = $"../MusicPack/WallAudio"
 @onready var paddle_audio = $"../MusicPack/PaddleAudio"
+@onready var wall_audio = $"../MusicPack/WallAudio"
 
 
 
@@ -40,6 +40,7 @@ func _physics_process(delta):
 		paddle_audio.play()
 	else:
 		velocity = velocity.bounce(collision.get_normal())
+		wall_audio.play()
 	
 func start_ball():
 	position = start_position
