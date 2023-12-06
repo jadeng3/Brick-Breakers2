@@ -1,15 +1,14 @@
 extends Node
 
-var current_level = 3
+var current_level = 1
 
 var level_1 = [
 	[0,1,0]
 ]
 
 var level_2 = [
-	[1,1,1,0,0,1,1,1],
-	[1,0,1,0,0,1,0,1],
-	[2,2,2,0,0,2,2,2]
+	[1,0,0,0,1],
+	[0,0,1,0,0]
 ]
 
 var level_3 = [
